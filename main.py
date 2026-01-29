@@ -1,4 +1,6 @@
 #imports
+import os
+import subprocess
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import webbrowser
@@ -12,12 +14,13 @@ URLS = [
     "https://docs.google.com/spreadsheets/d/1gx7nYJmS03RO3jSOVx6hOyyBleIatrK6f4_Be6Qm_z8/edit",
     "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/",
     "https://www.overleaf.com/project",
-    "GitHubDesktop.exe://",
     "vscode://",
 ]
+
 Apps = [
-    "C:\\Users\\vbasnaya18\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GitHub, Inc\\GitHub Desktop.lnk\\GitHubDesktop.exe"
+    r"C:\\Users\\vbasnaya18\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
 ]
+
 
 @app.get("/", response_class=HTMLResponse)
 def home():
@@ -32,4 +35,11 @@ def home():
 def start_work():
     for url in URLS:
         webbrowser.open_new_tab(url)
+        
+    # Open desktop apps
+    for app in Apps:
+        path = os.path.expandvars(app)
+        if os.path.exists(path):
+            subprocess.Popen(path, shell=True)
+
     return {"ok": True}
