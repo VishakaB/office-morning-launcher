@@ -10,7 +10,7 @@ URLS = [
     "https://rahti.csc.fi/",
     "https://chat.openai.com/",
     "https://docs.google.com/spreadsheets/d/1gx7nYJmS03RO3jSOVx6hOyyBleIatrK6f4_Be6Qm_z8/edit",
-    "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/"
+    "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/",
     "https://www.overleaf.com/project"
 ]
 
