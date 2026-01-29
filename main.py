@@ -11,7 +11,10 @@ URLS = [
     "https://chat.openai.com/",
     "https://docs.google.com/spreadsheets/d/1gx7nYJmS03RO3jSOVx6hOyyBleIatrK6f4_Be6Qm_z8/edit",
     "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/",
-    "https://www.overleaf.com/project"
+    "https://www.overleaf.com/project",
+    "https://github.com/6GVisible",
+    "github-desktop://",
+    "vscode://",
 ]
 
 @app.get("/", response_class=HTMLResponse)
