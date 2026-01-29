@@ -17,11 +17,6 @@ URLS = [
     "vscode://",
 ]
 
-Apps = [
-    r"C:\\Users\\vbasnaya18\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
-]
-
-
 @app.get("/", response_class=HTMLResponse)
 def home():
     return """
@@ -35,11 +30,10 @@ def home():
 def start_work():
     for url in URLS:
         webbrowser.open_new_tab(url)
-        
-    # Open desktop apps
-    for app in Apps:
-        path = os.path.expandvars(app)
-        if os.path.exists(path):
-            subprocess.Popen(path, shell=True)
+
+    os.startfile(
+        r"C:\Users\vbasnaya18\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
+    )
 
     return {"ok": True}
+
