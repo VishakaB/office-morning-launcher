@@ -12,9 +12,11 @@ URLS = [
     "https://docs.google.com/spreadsheets/d/1gx7nYJmS03RO3jSOVx6hOyyBleIatrK6f4_Be6Qm_z8/edit",
     "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/",
     "https://www.overleaf.com/project",
-    "https://github.com/6GVisible",
-    "file:///C:/Users/vbasnaya18/AppData/Roaming/Microsoft/Windows/Start%20Menu/Programs/GitHub,%20Inc/GitHub%20Desktop.lnk",
+    "GitHubDesktop.exe://",
     "vscode://",
+]
+Apps = [
+    "C:\\Users\\vbasnaya18\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GitHub, Inc\\GitHub Desktop.lnk\\GitHubDesktop.exe"
 ]
 
 @app.get("/", response_class=HTMLResponse)
