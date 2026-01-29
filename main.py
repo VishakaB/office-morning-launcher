@@ -13,7 +13,7 @@ URLS = [
     "https://interval-timer-app-git-main-vishakabs-projects.vercel.app/",
     "https://www.overleaf.com/project",
     "https://github.com/6GVisible",
-    "github-desktop://",
+    "file:///C:/Users/vbasnaya18/AppData/Roaming/Microsoft/Windows/Start%20Menu/Programs/GitHub,%20Inc/GitHub%20Desktop.lnk",
     "vscode://",
 ]
 
